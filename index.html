@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      maximum-scale="1"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SnapClima</title>
+  </head>
+  <body>
+
+    <header class="header-container">
+      <div class="campo-de-pesquisa">
+        <input
+          type="text"
+          placeholder="Temperatura de qual cidade"
+          class="header-pesquisa"
+          id="search-input"
+        />
+        <button class="header-button" id="search-button">
+          <img src="./img/assets/search-icon.svg" alt="ícone de uma lupa" />
+        </button>
+      </div>
+
+      <div class="header-data-atual" id="data-atual"><p>...</p></div>
+        
+      </div>
+      <div class="header-nome-cidade" id="nome-cidade">
+        <p>...</p>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <section class="content-temperature">
+        <img
+          src="./img/assets/loading-icon.svg"
+          aria-hidden="true"
+          alt="ícone de login"
+          class="icon-login"
+          id="icon-login"
+        />
+        <div class="rain-dice"  id="rain-dice">
+          <p>...</p>
+        </div>
+
+        <div class="data-time">
+          <p>tempo agora</p>
+        </div>
+
+        <div class="data-degrees" id="data-degrees">
+          <p>...</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="bottom-container">
+      <section class="bottom-details">
+        <div class="bottom-linha-1">
+          <div class="bottom-items">
+            <p class="temprerature-title">vento</p>
+            <p class="temperature-value" id="wind-speed">...</p>
+          </div>
+
+          <div class="bottom-items">
+            <p class="temprerature-title">sensação</p>
+            <p class="temperature-value" id="feels-like-temperature">...</p>
+          </div>
+
+          <div class="bottom-items">
+            <p class="temprerature-title">umidade</p>
+            <p class="temperature-value" id="humidit">...</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="bottom-linha-2">
+        <div class="sunrise-sunrise">
+          <img
+            class="sunrise-img"
+            src="./img/assets/sunrise.svg"
+            alt="Nascer do sol"
+          />
+          <p class="bottom-value" id="sunrise-time">...</p>
+        </div>
+
+        <div class="sunrise-sunrise">
+          <img
+            class="sunset-img"
+            src="./img/assets/sunset.svg "
+            alt="Pôr do sol"
+          />
+          <p class="bottom-value" id="sunset-time">...</p>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

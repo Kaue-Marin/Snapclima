@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Ubuntu:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f3f4fb;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container,
+.bottom-details,
+.bottom-linha-2 {
+  padding: 0px 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.campo-de-pesquisa {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.header-pesquisa {
+  border: none;
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 10px 0 0 10px;
+  appearance: none;
+  margin-right: -25px;
+}
+
+.header-button {
+  cursor: pointer;
+  min-width: 50px;
+  min-height: 50px;
+  border: none;
+  border-radius: 100%;
+  background: #393939;
+  color: #f3f4fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px rgba(0, 0, 0, 0.3) 8px 8px
+    16px -8px;
+  transition: 0.4s ease-in-out;
+}
+
+.header-button:hover {
+  filter: brightness(1.25);
+}
+
+.header-data-atual > p,
+.header-nome-cidade > p {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header-data-atual {
+  color: #a2a2be;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.header-nome-cidade {
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 6px;
+}
+
+.content-temperature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  flex: 1 0 auto;
+}
+
+.icon-login {
+  width: 125px;
+  margin-top: 25px;
+}
+
+.rain-dice {
+  color: #b6aef0;
+  font-weight: 500;
+  font-size: 19px;
+  margin-top: 30px;
+}
+
+.data-time {
+  margin-top: 6px;
+  color: #a2a2be;
+}
+
+.data-degrees {
+  font-size: 19px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.bottom-container {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px rgba(0, 0, 0, 0.3) 8px 8px
+    16px -8px;
+}
+
+.bottom-linha-1 {
+  display: flex;
+  margin-top: 30px;
+}
+
+.bottom-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #a2a2be;
+}
+
+.bottom-items:last-child {
+  border: none;
+}
+
+.temprerature-title {
+  color: #a2a2be;
+}
+
+.temperature-value,
+.bottom-value {
+  font-weight: 500;
+  margin-top: 7px;
+}
+
+.bottom-linha-2 {
+  display: flex;
+  margin: 30px auto;
+}
+
+.sunrise-sunrise {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
