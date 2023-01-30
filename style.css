@@ -15,6 +15,7 @@ body {
   flex-direction: column;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .header-container,
@@ -26,6 +27,9 @@ body {
   width: 100%;
 }
 
+.header-container {
+  flex: 1 0 auto;
+}
 .campo-de-pesquisa {
   display: flex;
   justify-content: center;
@@ -85,7 +89,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  flex: 1 0 auto;
+  margin-bottom: 30px;
 }
 
 .icon-login {
@@ -113,8 +117,6 @@ body {
 
 .bottom-container {
   background: #fff;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   border-radius: 25px 25px 0 0;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px rgba(0, 0, 0, 0.3) 8px 8px
