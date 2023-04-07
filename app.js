@@ -44,9 +44,7 @@ navigator.geolocation.getCurrentPosition(
 function getCurrentLocationWeather(lat, lon) {
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=pt_br&appid=${api_key}`
-  )
-    .then((response) => response.json())
-    .then((data) => displayWeather(data));
+  ).then((response) => response.json());
 }
 
 function getCityWeather(cityName) {
